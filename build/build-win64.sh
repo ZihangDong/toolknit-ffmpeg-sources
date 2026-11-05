@@ -17,6 +17,7 @@ export CFLAGS="-O2 -I$PREFIX/include -D_WIN32_WINNT=0x0601"
 export CXXFLAGS="$CFLAGS"
 export LDFLAGS="-L$PREFIX/lib -static-libgcc -static-libstdc++ -static"
 export SOURCE_DATE_EPOCH=1704016800
+export GIT_CEILING_DIRECTORIES="$WORK/src"
 dpkg-query -W -f='${Package}\t${Version}\n' > "$WORK/output/toolchain-packages.txt"
 "$CC" --version > "$WORK/output/compiler.txt"
 mkdir -p "$WORK/output/toolchain-notices"
