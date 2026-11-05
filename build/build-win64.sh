@@ -59,6 +59,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 EOF
 src() {
+  printf '\n=== Build %s ===\n' "$1"
   cd "$WORK/src"
   mkdir -p "$1"
   tar xzf "$ROOT/third-party/$1.tar.gz" --strip-components=1 -C "$1"
