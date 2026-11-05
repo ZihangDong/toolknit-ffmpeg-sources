@@ -1,6 +1,6 @@
 THIRD-PARTY NOTICES
 
-Candidate toolknit-win64-6.1.6-r3. These notices do not change upstream licenses.
+Build toolknit-win64-6.1.6-r3. These notices do not change upstream licenses.
 Full source trees and per-file notices are preserved in the source archives.
 
 
@@ -170,7 +170,8 @@ patent must be licensed for everyone's free use or not licensed at all.
 
   The precise terms and conditions for copying, distribution and
 modification follow.
-
+
+
 		    GNU GENERAL PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
@@ -225,7 +226,8 @@ above, provided that you also meet all of these conditions:
     License.  (Exception: if the Program itself is interactive but
     does not normally print such an announcement, your work based on
     the Program is not required to print an announcement.)
-
+
+
 These requirements apply to the modified work as a whole.  If
 identifiable sections of that work are not derived from the Program,
 and can be reasonably considered independent and separate works in
@@ -283,7 +285,8 @@ access to copy from a designated place, then offering equivalent
 access to copy the source code from the same place counts as
 distribution of the source code, even though third parties are not
 compelled to copy the source along with the object code.
-
+
+
   4. You may not copy, modify, sublicense, or distribute the Program
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
@@ -340,7 +343,8 @@ impose that choice.
 
 This section is intended to make thoroughly clear what is believed to
 be a consequence of the rest of this License.
-
+
+
   8. If the distribution and/or use of the Program is restricted in
 certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
@@ -393,7 +397,8 @@ PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
 
 		     END OF TERMS AND CONDITIONS
-
+
+
 	    How to Apply These Terms to Your New Programs
 
   If you develop a new program, and you want it to be of the greatest
@@ -519,7 +524,8 @@ patent must be licensed for everyone's free use or not licensed at all.
 
   The precise terms and conditions for copying, distribution and
 modification follow.
-
+
+
 		    GNU GENERAL PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
@@ -574,7 +580,8 @@ above, provided that you also meet all of these conditions:
     License.  (Exception: if the Program itself is interactive but
     does not normally print such an announcement, your work based on
     the Program is not required to print an announcement.)
-
+
+
 These requirements apply to the modified work as a whole.  If
 identifiable sections of that work are not derived from the Program,
 and can be reasonably considered independent and separate works in
@@ -632,7 +639,8 @@ access to copy from a designated place, then offering equivalent
 access to copy the source code from the same place counts as
 distribution of the source code, even though third parties are not
 compelled to copy the source along with the object code.
-
+
+
   4. You may not copy, modify, sublicense, or distribute the Program
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
@@ -689,7 +697,8 @@ impose that choice.
 
 This section is intended to make thoroughly clear what is believed to
 be a consequence of the rest of this License.
-
+
+
   8. If the distribution and/or use of the Program is restricted in
 certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
@@ -742,7 +751,8 @@ PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
 
 		     END OF TERMS AND CONDITIONS
-
+
+
 	    How to Apply These Terms to Your New Programs
 
   If you develop a new program, and you want it to be of the greatest
@@ -807,6 +817,49 @@ This program is also available under a commercial proprietary license.
 For more information, contact us at license @ x265.com.
 
 
+--- source/dynamicHDR10/LICENSE.txt ---
+Copyright (C) 2013-2020 MulticoreWare, Inc
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111, USA.
+
+This program is also available under a commercial proprietary license.
+For more information, contact us at license @ x265.com.
+
+
+--- source/dynamicHDR10/json11/LICENSE.txt ---
+Copyright (c) 2013 Dropbox, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
 
 ===== lame =====
 Source: https://codeload.github.com/ShiftMediaProject/lame/tar.gz/d9ae340aa2a8185fa541c24d7883c2a2f6246765
@@ -867,7 +920,8 @@ library.  If the library is modified by someone else and passed on, we
 want its recipients to know that what they have is not the original
 version, so that any problems introduced by others will not reflect on
 the original authors' reputations.
-
+
+
   Finally, any free program is threatened constantly by software
 patents.  We wish to avoid the danger that companies distributing free
 software will individually obtain patent licenses, thus in effect
@@ -914,7 +968,8 @@ works together with the library.
 
   Note that it is possible for a library to be covered by the ordinary
 General Public License rather than by this special one.
-
+
+
 		  GNU LIBRARY GENERAL PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
@@ -949,7 +1004,7 @@ such a program is covered only if its contents constitute a work based
 on the Library (independent of the use of the Library in a tool for
 writing it).  Whether that is true depends on what the Library does
 and what the program that uses the Library does.
-  
+
   1. You may copy and distribute verbatim copies of the Library's
 complete source code as you receive it, in any medium, provided that
 you conspicuously and appropriately publish on each copy an
@@ -961,7 +1016,8 @@ Library.
   You may charge a fee for the physical act of transferring a copy,
 and you may at your option offer warranty protection in exchange for a
 fee.
-
+
+
   2. You may modify your copy or copies of the Library or any portion
 of it, thus forming a work based on the Library, and copy and
 distribute such modifications or work under the terms of Section 1
@@ -1019,7 +1075,8 @@ instead of to this License.  (If a newer version than version 2 of the
 ordinary GNU General Public License has appeared, then you can specify
 that version instead if you wish.)  Do not make any other change in
 these notices.
-
+
+
   Once this change is made in a given copy, it is irreversible for
 that copy, so the ordinary GNU General Public License applies to all
 subsequent copies and derivative works made from that copy.
@@ -1070,7 +1127,8 @@ Library will still fall under Section 6.)
 distribute the object code for the work under the terms of Section 6.
 Any executables containing that work also fall under Section 6,
 whether or not they are linked directly with the Library itself.
-
+
+
   6. As an exception to the Sections above, you may also compile or
 link a "work that uses the Library" with the Library to produce a
 work containing portions of the Library, and distribute that work
@@ -1124,7 +1182,8 @@ restrictions of other proprietary libraries that do not normally
 accompany the operating system.  Such a contradiction means you cannot
 use both them and the Library together in an executable that you
 distribute.
-
+
+
   7. You may place library facilities that are a work based on the
 Library side-by-side in a single library together with other library
 facilities not covered by this License, and distribute such a combined
@@ -1165,7 +1224,8 @@ subject to these terms and conditions.  You may not impose any further
 restrictions on the recipients' exercise of the rights granted herein.
 You are not responsible for enforcing compliance by third parties to
 this License.
-
+
+
   11. If, as a consequence of a court judgment or allegation of patent
 infringement or for any other reason (not limited to patent issues),
 conditions are imposed on you (whether by court order, agreement or
@@ -1217,7 +1277,8 @@ conditions either of that version or of any later version published by
 the Free Software Foundation.  If the Library does not specify a
 license version number, you may choose any version ever published by
 the Free Software Foundation.
-
+
+
   14. If you wish to incorporate parts of the Library into other free
 programs whose distribution conditions are incompatible with these,
 write to the author to ask for permission.  For software which is
@@ -1251,7 +1312,8 @@ SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 
 		     END OF TERMS AND CONDITIONS
-
+
+
            How to Apply These Terms to Your New Libraries
 
   If you develop a new library, and you want it to be of the greatest
@@ -1298,12 +1360,12 @@ That's all there is to it!
 
 
 --- LICENSE ---
-Can I use LAME in my commercial program?  
+Can I use LAME in my commercial program?
 
 Yes, you can, under the restrictions of the LGPL (see COPYING
 in this folder). The easiest way to do this is to:
 
-1. Link to LAME as separate library (libmp3lame.a on unix or 
+1. Link to LAME as separate library (libmp3lame.a on unix or
    lame_enc.dll or libmp3lame.dll on windows)
 
 2. Fully acknowledge that you are using LAME, and give a link
@@ -1311,6 +1373,83 @@ in this folder). The easiest way to do this is to:
 
 3. If you make modifications to LAME, you *must* release these
    modifications back to the LAME project, under the LGPL.
+
+
+--- debian/copyright ---
+This package was originally made by Stefan Karrmann <S.Karrmann@gmx.net>
+on Thu, 31 Aug 2000 22:15:07 +0200.
+
+The current maintainer is Rogério Brito <rbrito@users.sf.net>.
+
+It was downloaded from the CVS repository at <http://sf.net/projects/lame>.
+
+Upstream Authors: The LAME team <lame-dev@lists.sf.net>.
+
+Copyright © 1999-2009 The LAME team <lame-dev@lists.sf.net> and contributors.
+
+    LAME is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Library General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    LAME is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Library General Public License for more details.
+
+    You should have received a copy of the GNU Library General Public
+    License along with this library; if not, write to the
+    Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+    MA 02110-1301, USA.
+
+Additionally, the original software's LICENCE file contains the following:
+
+- - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -
+Can I use LAME in my commercial program?
+
+Yes, you can, under the restrictions of the LGPL.  The easiest
+way to do this is to:
+
+1. Link to LAME as separate library (libmp3lame.a on unix or
+   lame_enc.dll on windows)
+
+2. Fully acknowledge that you are using LAME, and give a link
+   to our web site, www.mp3dev.org
+
+3. If you make modifications to LAME, you *must* release these
+   these modifications back to the LAME project, under the LGPL.
+
+*** IMPORTANT NOTE ***
+
+The decoding functions provided in LAME use the mpglib decoding engine which
+is under the GPL.  They may not be used by any program not released under the
+GPL unless you obtain such permission from the MPG123 project (www.mpg123.de).
+- - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -
+
+On Debian systems, the complete text of the GNU Library General Public
+License can be found in `/usr/share/common-licenses/LGPL-2'.
+
+The Debian packaging is © 2005-2009, Rogério Brito <rbrito@users.sf.net>
+and is licensed under the GPL, see above.
+
+
+--- mpglib/AUTHORS ---
+Michael Hipp	<mh@mpg123.de>	Author of orignal mpglib version 0.2a.
+
+Albert L. Faber	<afaber@users.sf.net>
+Aleksander Korzynski	<olcios@users.sf.net>
+Alexander Leidinger	<aleidinger@users.sf.net>
+Frank Klemm	<pfk@users.sf.net>
+Gabriel Bouvigne	<bouvigne@users.sf.net>
+Leigh Smith	<leighsmith@users.sf.net>
+Mark Taylor	<markt@users.sf.net>
+Myers Carpenter	<myers@users.sf.net>
+Naoki Shibata	<shibatch@users.sf.net>
+Robert Hegemann	<robert@users.sf.net>
+Sigbjorn Skjaeret	<cisc@users.sf.net>
+Stefan Bellon	<sbellon@users.sf.net>
+Steve Lhomme	<robux4@users.sf.net>
+Takehiro TOMINAGA	<takehiro@users.sf.net>
 
 
 
@@ -1401,6 +1540,47 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- debian/copyright ---
+This package was debianized by Christopher L Cheney <ccheney@debian.org> on
+Tue, 31 Oct 2000 15:08:22 -0600.
+
+It was downloaded from https://downloads.xiph.org/releases/vorbis/
+
+Upstream Author: Monty <monty@xiph.org>
+
+Copyright:
+
+Copyright (c) 2020, Xiph.org Foundation
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Xiph.org Foundation nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 
 
 
@@ -1787,6 +1967,156 @@ for these implementations of WebM shall terminate as of the date such
 litigation is filed.
 
 
+--- third_party/googletest/src/LICENSE ---
+Copyright 2008, Google Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+    * Neither the name of Google Inc. nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- third_party/libwebm/AUTHORS.TXT ---
+# Names should be added to this file like so:
+# Name or Organization <email address>
+
+Google Inc.
+
+
+--- third_party/libwebm/LICENSE.TXT ---
+Copyright (c) 2010, Google Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of Google nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+--- third_party/libwebm/PATENTS.TXT ---
+Additional IP Rights Grant (Patents)
+------------------------------------
+
+"These implementations" means the copyrightable works that implement the WebM
+codecs distributed by Google as part of the WebM Project.
+
+Google hereby grants to you a perpetual, worldwide, non-exclusive, no-charge,
+royalty-free, irrevocable (except as stated in this section) patent license to
+make, have made, use, offer to sell, sell, import, transfer, and otherwise
+run, modify and propagate the contents of these implementations of WebM, where
+such license applies only to those patent claims, both currently owned by
+Google and acquired in the future, licensable by Google that are necessarily
+infringed by these implementations of WebM. This grant does not include claims
+that would be infringed only as a consequence of further modification of these
+implementations. If you or your agent or exclusive licensee institute or order
+or agree to the institution of patent litigation or any other patent
+enforcement activity against any entity (including a cross-claim or
+counterclaim in a lawsuit) alleging that any of these implementations of WebM
+or any code incorporated within any of these implementations of WebM
+constitute direct or contributory patent infringement, or inducement of
+patent infringement, then any patent rights granted to you under this License
+for these implementations of WebM shall terminate as of the date such
+litigation is filed.
+
+
+--- third_party/libyuv/LICENSE ---
+Copyright 2011 The LibYuv Project Authors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of Google nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+--- third_party/x86inc/LICENSE ---
+Copyright (C) 2005-2012 x264 project
+
+Authors: Loren Merritt <lorenm@u.washington.edu>
+         Anton Mitrofanov <BugMaster@narod.ru>
+         Jason Garrett-Glaser <darkshikari@gmail.com>
+         Henrik Gramner <hengar-6@student.ltu.se>
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
 
 ===== webp =====
 Source: https://codeload.github.com/webmproject/libwebp/tar.gz/refs/tags/v1.3.2
@@ -1945,6 +2275,31 @@ Copyright notice:
   Jean-loup Gailly        Mark Adler
   jloup@gzip.org          madler@alumni.caltech.edu
 
+
+--- contrib/dotzlib/LICENSE_1_0.txt ---
+Boost Software License - Version 1.0 - August 17th, 2003
+
+Permission is hereby granted, free of charge, to any person or organization
+obtaining a copy of the software and accompanying documentation covered by
+this license (the "Software") to use, reproduce, display, distribute,
+execute, and transmit the Software, and to prepare derivative works of the
+Software, and to permit third-parties to whom the Software is furnished to
+do so, all subject to the following:
+
+The copyright notices in the Software and this entire statement, including
+the above license grant, this restriction and the following disclaimer,
+must be included in all copies of the Software, in whole or in part, and
+all derivative works of the Software, unless such copies or derivative
+works are solely in the form of machine-executable object code generated by
+a source language processor.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
 
 
 ===== nv-codec-headers =====
@@ -2123,3 +2478,112 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+--- doc/PATENTS ---
+Alliance for Open Media Patent License 1.0
+
+1. License Terms.
+
+1.1. Patent License. Subject to the terms and conditions of this License, each
+     Licensor, on behalf of itself and successors in interest and assigns,
+     grants Licensee a non-sublicensable, perpetual, worldwide, non-exclusive,
+     no-charge, royalty-free, irrevocable (except as expressly stated in this
+     License) patent license to its Necessary Claims to make, use, sell, offer
+     for sale, import or distribute any Implementation.
+
+1.2. Conditions.
+
+1.2.1. Availability. As a condition to the grant of rights to Licensee to make,
+       sell, offer for sale, import or distribute an Implementation under
+       Section 1.1, Licensee must make its Necessary Claims available under
+       this License, and must reproduce this License with any Implementation
+       as follows:
+
+       a. For distribution in source code, by including this License in the
+          root directory of the source code with its Implementation.
+
+       b. For distribution in any other form (including binary, object form,
+          and/or hardware description code (e.g., HDL, RTL, Gate Level Netlist,
+          GDSII, etc.)), by including this License in the documentation, legal
+          notices, and/or other written materials provided with the
+          Implementation.
+
+1.2.2. Additional Conditions. This license is directly from Licensor to
+       Licensee.  Licensee acknowledges as a condition of benefiting from it
+       that no rights from Licensor are received from suppliers, distributors,
+       or otherwise in connection with this License.
+
+1.3. Defensive Termination. If any Licensee, its Affiliates, or its agents
+     initiates patent litigation or files, maintains, or voluntarily
+     participates in a lawsuit against another entity or any person asserting
+     that any Implementation infringes Necessary Claims, any patent licenses
+     granted under this License directly to the Licensee are immediately
+     terminated as of the date of the initiation of action unless 1) that suit
+     was in response to a corresponding suit regarding an Implementation first
+     brought against an initiating entity, or 2) that suit was brought to
+     enforce the terms of this License (including intervention in a third-party
+     action by a Licensee).
+
+1.4. Disclaimers. The Reference Implementation and Specification are provided
+     "AS IS" and without warranty. The entire risk as to implementing or
+     otherwise using the Reference Implementation or Specification is assumed
+     by the implementer and user. Licensor expressly disclaims any warranties
+     (express, implied, or otherwise), including implied warranties of
+     merchantability, non-infringement, fitness for a particular purpose, or
+     title, related to the material. IN NO EVENT WILL LICENSOR BE LIABLE TO
+     ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL,
+     INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF
+     ACTION OF ANY KIND WITH RESPECT TO THIS LICENSE, WHETHER BASED ON BREACH
+     OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR
+     NOT THE OTHER PARTRY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+2. Definitions.
+
+2.1. Affiliate.  “Affiliate” means an entity that directly or indirectly
+     Controls, is Controlled by, or is under common Control of that party.
+
+2.2. Control. “Control” means direct or indirect control of more than 50% of
+     the voting power to elect directors of that corporation, or for any other
+     entity, the power to direct management of such entity.
+
+2.3. Decoder.  "Decoder" means any decoder that conforms fully with all
+     non-optional portions of the Specification.
+
+2.4. Encoder.  "Encoder" means any encoder that produces a bitstream that can
+     be decoded by a Decoder only to the extent it produces such a bitstream.
+
+2.5. Final Deliverable.  “Final Deliverable” means the final version of a
+     deliverable approved by the Alliance for Open Media as a Final
+     Deliverable.
+
+2.6. Implementation.  "Implementation" means any implementation, including the
+     Reference Implementation, that is an Encoder and/or a Decoder. An
+     Implementation also includes components of an Implementation only to the
+     extent they are used as part of an Implementation.
+
+2.7. License. “License” means this license.
+
+2.8. Licensee. “Licensee” means any person or entity who exercises patent
+     rights granted under this License.
+
+2.9. Licensor.  "Licensor" means (i) any Licensee that makes, sells, offers
+     for sale, imports or distributes any Implementation, or (ii) a person
+     or entity that has a licensing obligation to the Implementation as a
+     result of its membership and/or participation in the Alliance for Open
+     Media working group that developed the Specification.
+
+2.10. Necessary Claims.  "Necessary Claims" means all claims of patents or
+      patent applications, (a) that currently or at any time in the future,
+      are owned or controlled by the Licensor, and (b) (i) would be an
+      Essential Claim as defined by the W3C Policy as of February 5, 2004
+      (https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential)
+      as if the Specification was a W3C Recommendation; or (ii) are infringed
+      by the Reference Implementation.
+
+2.11. Reference Implementation. “Reference Implementation” means an Encoder
+      and/or Decoder released by the Alliance for Open Media as a Final
+      Deliverable.
+
+2.12. Specification. “Specification” means the specification designated by
+      the Alliance for Open Media as a Final Deliverable for which this
+      License was issued.

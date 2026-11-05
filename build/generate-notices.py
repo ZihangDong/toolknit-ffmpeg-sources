@@ -8,7 +8,7 @@ from pathlib import Path, PurePosixPath
 
 root = Path(__file__).resolve().parent.parent
 manifest = json.loads((root / 'metadata/build-sources.json').read_text())
-parts = ['THIRD-PARTY NOTICES\n\nCandidate toolknit-win64-6.1.6-r3. These notices do not change upstream licenses.\n'
+parts = ['THIRD-PARTY NOTICES\n\nBuild toolknit-win64-6.1.6-r3. These notices do not change upstream licenses.\n'
          'Full source trees and per-file notices are preserved in the source archives.\n']
 for source in manifest['sources']:
     archive = root / source['file']
@@ -19,13 +19,19 @@ for source in manifest['sources']:
             if not entry.isfile():
                 continue
             relative = PurePosixPath(*PurePosixPath(entry.name).parts[1:])
-            is_notice = len(relative.parts) == 1 and relative.name.startswith(('COPYING', 'LICENSE', 'COPYRIGHT', 'PATENTS', 'AUTHORS'))
+            is_notice = relative.name.upper().startswith(('COPYING', 'LICENSE', 'COPYRIGHT', 'PATENTS', 'AUTHORS'))
             is_header = source['name'] == 'nv-codec-headers' and str(relative).startswith('include/ffnvcodec/') and relative.suffix == '.h'
             if not (is_notice or is_header):
                 continue
-            text = tar.extractfile(entry).read().decode('utf8')
+            data = tar.extractfile(entry).read()
+            try:
+                text = data.decode('utf8')
+            except UnicodeDecodeError:
+                text = data.decode('latin1')
             if is_header:
                 text = text[:text.index('*/') + 2]
             parts.append(f'\n--- {relative} ---\n{text}')
-(root / 'LICENSES/Third-Party.txt').write_text('\n'.join(parts) + '\n', encoding='utf8', newline='\n')
+# Normalize whitespace in this reading copy; archives retain original bytes.
+notice = '\n'.join(line.rstrip() for line in '\n'.join(parts).splitlines()).rstrip() + '\n'
+(root / 'LICENSES/Third-Party.txt').write_text(notice, encoding='utf8', newline='\n')
 print('Preserved archived component licenses, patent grants and all NVIDIA header notices.')

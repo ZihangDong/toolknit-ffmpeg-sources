@@ -1,0 +1,37 @@
+
+  configuration:
+    --prefix=/home/runner/work/toolknit-ffmpeg-sources/toolknit-ffmpeg-sources/.build/prefix
+    --arch=x86_64
+    --target-os=mingw32
+    --cross-prefix=x86_64-w64-mingw32-
+    --cc=x86_64-w64-mingw32-gcc-posix
+    --cxx=x86_64-w64-mingw32-g++-posix
+    --pkg-config=pkg-config --pkg-config-flags=--static
+    --enable-gpl
+    --enable-version3
+    --enable-static
+    --disable-shared
+    --disable-autodetect
+    --disable-debug
+    --disable-doc
+    --disable-ffplay
+    --enable-zlib
+    --enable-libx264
+    --enable-libx265
+    --enable-libmp3lame
+    --enable-libvorbis
+    --enable-libopus
+    --enable-libvpx
+    --enable-libwebp
+    --enable-libdav1d
+    --enable-ffnvcodec
+    --enable-nvenc
+    --enable-nvdec
+    --enable-cuvid
+    --enable-dxva2
+    --enable-d3d11va
+    --extra-version=toolknit-r3
+    --extra-cflags='-O2 -std=gnu11 -I/home/runner/work/toolknit-ffmpeg-sources/toolknit-ffmpeg-sources/.build/prefix/include -D_WIN32_WINNT=0x0601'
+    --extra-cxxflags='-O2 -I/home/runner/work/toolknit-ffmpeg-sources/toolknit-ffmpeg-sources/.build/prefix/include -D_WIN32_WINNT=0x0601'
+    --extra-ldflags='-L/home/runner/work/toolknit-ffmpeg-sources/toolknit-ffmpeg-sources/.build/prefix/lib -static-libgcc -static-libstdc++ -static'
+    --extra-libs='-lstdc++ -lpthread -lm'

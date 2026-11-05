@@ -1,32 +1,41 @@
 {
-  "schemaVersion": 1,
-  "verifiedDate": "2026-11-05",
-  "runtimeVersion": "6.1.1-essentials_build-www.gyan.dev",
+  "schemaVersion": 2,
+  "verifiedDate": "2026-11-06",
+  "runtimeVersion": "6.1.6-toolknit-r3",
   "platform": "win32-x64",
-  "reportedLicense": "GPL-3.0",
-  "buildProvider": "Gyan Doshi",
-  "upstreamRelease": "https://github.com/GyanD/codexffmpeg/releases/tag/6.1.1",
+  "reportedLicense": "GPL-3.0-or-later",
+  "buildProvider": "ToolKnit, built from the preserved upstream sources",
   "binary": {
-    "url": "https://toolknit-downloads-u1ll6equ.cdn.7caiyun.com/runtime/ffmpeg/ffmpeg-win32-x64.gz",
+    "url": "https://toolknit-downloads-u1ll6equ.cdn.7caiyun.com/runtime/ffmpeg/ffmpeg-6.1.6-toolknit-r3-win32-x64.gz",
     "compression": "gzip",
-    "bytes": 29581307,
-    "sha256": "8883a3dffbd0a16cf4ef95206ea05283f78908dbfb118f73c83f4951dcc06d77",
-    "exeBytes": 82797568,
-    "exeSha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00"
+    "bytes": 14642939,
+    "sha256": "c4f982b2f82dda95e079bd26129435640bc31d36d05308fada77cebc47a61fe3",
+    "exeBytes": 37815808,
+    "exeSha256": "a2ce68645f7c9d95dfc2bda6814aa432195a83b393ec4c2d58ad1ccc9ae8245a"
   },
   "mainSource": {
     "upstream": "https://github.com/FFmpeg/FFmpeg",
-    "tag": "n6.1.1",
-    "commit": "e38092ef9395d7049f871ef4d5411eb410e283e0",
-    "tree": "dc2cc148dbd7406686d6052c6d414594ad9c5c20",
-    "directory": "ffmpeg",
-    "archive": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/e38092ef9395d7049f871ef4d5411eb410e283e0",
-    "archiveSha256": "7578feb5284b22e6172c6f4020ddc43d746eb3ca44363756d1b47a96fd2d68f5",
-    "verifiedFiles": 8190
+    "tag": "n6.1.6",
+    "commit": "f1e3a2bf7a2f2cde936d1ed97f09a26853d20125",
+    "tree": "9aaca04fcc4bb2a56d3a06bab6d262d587956dc2",
+    "directory": "source/ffmpeg-6.1.6"
   },
+  "build": {
+    "profile": "toolknit-win64-6.1.6-r3",
+    "sourceCommit": "95439c04417eef49b4a5dcbac484ce921f50d0ab",
+    "workflowRun": "https://github.com/ZihangDong/toolknit-ffmpeg-sources/actions/runs/42072553824",
+    "dependencyManifest": "metadata/build-sources.json",
+    "evidenceDirectory": "upstream-build/toolknit-r3",
+    "validation": "validation/windows-runtime.json"
+  },
+  "sourceSnapshotTag": "ffmpeg-6.1.6-toolknit-3",
+  "sourcePackage": "https://github.com/ZihangDong/toolknit-ffmpeg-sources/releases/download/ffmpeg-6.1.6-toolknit-3/toolknit-ffmpeg-6.1.6-r3-sources.tar.gz",
   "sourceStatus": {
     "mainSourcePreserved": true,
-    "completeCorrespondingSourceVerified": false,
+    "staticDependencySourcesPreserved": true,
+    "buildScriptsPreserved": true,
+    "buildVerified": true,
+    "completeCorrespondingSourceVerified": true,
     "reproducibleBuildVerified": false,
     "details": "BUILD-SOURCE-STATUS.md"
   }

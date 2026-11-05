@@ -1,87 +1,88 @@
-# FFmpeg sources and notices for ToolKnit
+# FFmpeg source distribution for ToolKnit
 
 [中文说明](#中文说明)
 
-This repository preserves the **FFmpeg 6.1.1 main source** and available
-build information for the optional Windows runtime distributed by
-[ToolKnit Desktop](https://github.com/ZihangDong/toolknit-desktop).
-FFmpeg is developed by the FFmpeg project. The Windows executable was built
-by Gyan Doshi; ToolKnit does not claim authorship of either.
+This repository supplies matching sources, build scripts and notices for
+ToolKnit's optional **FFmpeg 6.1.6-toolknit-r3 Windows x86-64 runtime**.
+FFmpeg and its components are written by their upstream developers.
+ToolKnit builds this profile from the sources preserved here.
 
-**Source availability:** the matching FFmpeg main source is included.
-Exact sources, patches and build scripts for all statically linked third-party
-libraries have **not yet been obtained**. This is not a claim that complete
-Corresponding Source for the whole executable has been assembled.
-See [build and source status](BUILD-SOURCE-STATUS.md).
-
-## Matching download and source
+## Download and verify
 
 | Item | Identity |
 | --- | --- |
-| Runtime | `6.1.1-essentials_build-www.gyan.dev`, Windows x86-64, static |
-| Build provider | [Gyan Doshi, release 6.1.1](https://github.com/GyanD/codexffmpeg/releases/tag/6.1.1) |
-| Reported build license | GNU GPL v3 (`--enable-gpl --enable-version3`) |
-| FFmpeg revision | [`e38092ef9395d7049f871ef4d5411eb410e283e0`](https://github.com/FFmpeg/FFmpeg/commit/e38092ef9395d7049f871ef4d5411eb410e283e0), tag `n6.1.1` |
-| Download | [7Caiyun runtime](https://toolknit-downloads-u1ll6equ.cdn.7caiyun.com/runtime/ffmpeg/ffmpeg-win32-x64.gz) |
-| Compressed bytes | `29,581,307` |
-| Compressed SHA-256 | `8883a3dffbd0a16cf4ef95206ea05283f78908dbfb118f73c83f4951dcc06d77` |
-| Decompressed EXE bytes | `82,797,568` |
-| EXE SHA-256 | `04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00` |
+| Runtime | 6.1.6-toolknit-r3, Windows x86-64 |
+| Combined build license | GNU GPL version 3 or later |
+| FFmpeg upstream | [n6.1.6, commit f1e3a2bf7a2f2cde936d1ed97f09a26853d20125](https://github.com/FFmpeg/FFmpeg/commit/f1e3a2bf7a2f2cde936d1ed97f09a26853d20125) |
+| Runtime download | [7Caiyun gzip](https://toolknit-downloads-u1ll6equ.cdn.7caiyun.com/runtime/ffmpeg/ffmpeg-6.1.6-toolknit-r3-win32-x64.gz) |
+| Gzip bytes / SHA-256 | 14642939 / c4f982b2f82dda95e079bd26129435640bc31d36d05308fada77cebc47a61fe3 |
+| EXE bytes / SHA-256 | 37815808 / a2ce68645f7c9d95dfc2bda6814aa432195a83b393ec4c2d58ad1ccc9ae8245a |
+| Fixed source snapshot | [ffmpeg-6.1.6-toolknit-3](https://github.com/ZihangDong/toolknit-ffmpeg-sources/tree/ffmpeg-6.1.6-toolknit-3) |
 
-[Download the preserved source and notices as a ZIP](https://github.com/ZihangDong/toolknit-ffmpeg-sources/archive/refs/tags/ffmpeg-6.1.1-toolknit-1.zip).
-The archive contains the materials described here; the limitations above also
-apply to the ZIP. No fee or account is required to download it.
+**[Download the complete source package and notices](https://github.com/ZihangDong/toolknit-ffmpeg-sources/releases/download/ffmpeg-6.1.6-toolknit-3/toolknit-ffmpeg-6.1.6-r3-sources.tar.gz)**
+— no payment or account required. Its SHA-256 accompanies the
+[source release](https://github.com/ZihangDong/toolknit-ffmpeg-sources/releases/tag/ffmpeg-6.1.6-toolknit-3).
 
-## Contents
+## Contents and build
 
-- [`ffmpeg/`](ffmpeg/): the upstream source tree, without ToolKnit changes.
-  Its Git tree is checked against the exact upstream revision.
-- [`upstream-build/README.gyan.txt`](upstream-build/README.gyan.txt): original
-  build notice, component list and enabled features.
-- [`upstream-build/ffmpeg-version.txt`](upstream-build/ffmpeg-version.txt) and
-  [`ffmpeg-buildconf.txt`](upstream-build/ffmpeg-buildconf.txt): output captured
-  from the actual distributed executable on 2026-11-05.
-- [`metadata/runtime.json`](metadata/runtime.json): machine-readable identity,
-  hashes, provenance and source status.
-- [`metadata/third-party-versions.json`](metadata/third-party-versions.json):
-  dependency versions reported by the original build notice.
-- [`LICENSES/GPL-3.0.txt`](LICENSES/GPL-3.0.txt): the GPL text supplied with the build.
-  The upstream tree retains its original `COPYING.*`, `LICENSE.md` and per-file notices.
+- [source/ffmpeg-6.1.6/](source/ffmpeg-6.1.6/): unchanged upstream main source.
+- [third-party/](third-party/): exact source archives for x264, x265, LAME,
+  Ogg, Vorbis, Opus, libvpx, WebP, zlib, dav1d and NVIDIA codec headers.
+- [metadata/build-sources.json](metadata/build-sources.json): upstream revisions,
+  archive sizes, SHA-256 hashes and license identifiers.
+- [build/](build/README.md): tested Ubuntu 24.04 cross-build recipe, verification,
+  packaging and notice-generation scripts. Project sources are read locally;
+  they are not downloaded again during compilation.
+- [upstream-build/toolknit-r3/](upstream-build/toolknit-r3/): configuration,
+  compiler/package inventory, original toolchain notices, PE imports, and output
+  captured from the actual executable.
+- [validation/windows-runtime.json](validation/windows-runtime.json): Windows
+  compatibility matrix using synthetic files and ToolKnit's CLI runtime.
+- [metadata/runtime.json](metadata/runtime.json): exact runtime identity,
+  successful build commit/run and source availability status.
 
-For an independent integrity check, install Node.js and Git, clone this repository,
-then run `node scripts/verify-source.mjs`. This checks the preserved source tree;
-it does not establish completeness of the missing third-party build materials.
-Do not treat configuration output as a tested recipe for reproducing the binary.
+Extract the source package, or clone this repository, then run
+**node scripts/verify-source.mjs**. It checks all dependency archives,
+main-source hashes and executable identity evidence, plus the Git tree in a
+checkout. **python3 build/verify-archives.py** checks source hashes alone.
+See [build instructions](build/README.md) for the general-purpose tools required.
 
-## Licensing and maintenance
+The [successful build](https://github.com/ZihangDong/toolknit-ffmpeg-sources/actions/runs/42072553824)
+and Windows conversion tests establish that these sources and scripts build a
+working runtime. A second byte-for-byte reproducible build has not been verified.
+NVIDIA hardware operation requires a supported device and user-installed driver;
+the matrix validates software workflows, not every GPU.
 
-The distributed static executable is identified by its provider as GPL v3.
-Upstream source files retain their own applicable licenses and copyright notices;
-see [`ffmpeg/LICENSE.md`](ffmpeg/LICENSE.md). ToolKnit's application license and
-PDF-to-document engine terms **do not apply to this FFmpeg source mirror**.
-Repository maintenance documents and verification scripts are MIT licensed;
-see [the maintenance license](LICENSES/MIT-maintenance.txt).
+## Licenses and legacy materials
 
-This repository contains no ToolKnit application code, user files or executable
-binaries. It is a source/notice archive, not an official FFmpeg development fork.
-The `ffmpeg-6.1.1-toolknit-1` tag preserves this snapshot; future runtime versions
-must receive separate identity records and source snapshots. Keep old snapshots
-available while distributing the matching binary. Report missing source material
-through [Issues](https://github.com/ZihangDong/toolknit-ffmpeg-sources/issues)
-or contact **info@toolknit.com**.
+The combined executable reports GPL-3.0-or-later. See [GPL text](LICENSES/GPL-3.0.txt),
+[FFmpeg licensing](source/ffmpeg-6.1.6/LICENSE.md),
+[component notices](LICENSES/Third-Party.txt) and
+[toolchain/runtime notices](LICENSES/Toolchain-Runtime.txt).
+Each source archive retains its original licenses and copyright notices.
+Our maintenance scripts and documentation are [MIT licensed](LICENSES/MIT-maintenance.txt).
+ToolKnit's application and PDF-to-document engine restrictions do not apply here.
+This repository contains no ToolKnit application code, user files or executable binaries.
+
+The earlier Gyan 6.1.1 snapshot remains in [ffmpeg/](ffmpeg/) and tag
+[ffmpeg-6.1.1-toolknit-1](https://github.com/ZihangDong/toolknit-ffmpeg-sources/tree/ffmpeg-6.1.1-toolknit-1).
+Its unresolved dependency/build-material gaps are documented in the
+[legacy status](LEGACY-GYAN-SOURCE-STATUS.md). They were not filled by substituting
+this new build's sources. See [current source status](BUILD-SOURCE-STATUS.md).
+
+Source inquiries: [Issues](https://github.com/ZihangDong/toolknit-ffmpeg-sources/issues)
+or **info@toolknit.com**.
 
 ## 中文说明
 
-本仓库单独保存 ToolKnit 按需分发的 FFmpeg 6.1.1 主源码、原始构建说明、
-GPL 许可和实际程序的版本/配置输出。FFmpeg 的版权归原作者，Windows
-构建由 Gyan Doshi 提供。ToolKnit 不冒充 FFmpeg 的作者。
+这里提供 ToolKnit 自行编译的 FFmpeg 6.1.6-toolknit-r3 对应源码：包含主源码、
+11 份准确的依赖源归档、构建脚本、配置、原始许可和实际构建证据。
+上方提供固定版本的完整源码包及校验值，下载不需要付费或登录。
+运行包通过七彩云提供；源码包在 GitHub 独立托管。
 
-`ffmpeg/` 对应上表中的准确提交，未加入 ToolKnit 改动。
-可点击上方 ZIP 链接下载，或克隆后运行校验脚本。
-当前静态构建还包含 x264、x265 等第三方组件；其完整精确源码、补丁和
-构建控制材料尚未全部取得，具体见 [材料状态](BUILD-SOURCE-STATUS.md)。
-不能仅凭本仓库已有 FFmpeg 主源码，就认定整个 EXE 的对应源码已经齐全。
+这份源码已成功构建，Windows 音视频转换、编辑和转写预处理测试已通过。
+未承诺不同工具链下生成字节完全相同的 EXE，也没有把编码器列表当成全部显卡实测。
+旧 Gyan 构建及其材料缺口单独保留，不与新构建混淆。
 
-ToolKnit 主程序及 PDF 转文档引擎的独立条款不适用于这里的 FFmpeg 源码。
-本仓库不包含 ToolKnit 主程序源码、私密资料或二进制程序。
-源码补充或其他问题可提交 Issue，或联系 **info@toolknit.com**。
+FFmpeg 和第三方组件的权利归原作者。合并程序适用 GPL v3 或更新版本；
+ToolKnit 主程序与 PDF 引擎的独立条款不适用于本仓库的 FFmpeg 源码。
