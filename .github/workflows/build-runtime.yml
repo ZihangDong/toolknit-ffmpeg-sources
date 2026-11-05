@@ -23,6 +23,6 @@ jobs:
         with:
           name: toolknit-ffmpeg-win64-r2
           path: |
-            .build/output/*
+            .build/output/**
             build.log
           retention-days: 14

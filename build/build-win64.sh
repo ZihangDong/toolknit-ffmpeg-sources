@@ -19,6 +19,12 @@ export LDFLAGS="-L$PREFIX/lib -static-libgcc -static-libstdc++ -static"
 export SOURCE_DATE_EPOCH=1704016800
 dpkg-query -W -f='${Package}\t${Version}\n' > "$WORK/output/toolchain-packages.txt"
 "$CC" --version > "$WORK/output/compiler.txt"
+mkdir -p "$WORK/output/toolchain-notices"
+for package in mingw-w64-common mingw-w64-x86-64-dev gcc-mingw-w64-base gcc-mingw-w64-x86-64-posix g++-mingw-w64-x86-64-posix; do
+  if [[ -f "/usr/share/doc/$package/copyright" ]]; then
+    cp "/usr/share/doc/$package/copyright" "$WORK/output/toolchain-notices/$package.txt"
+  fi
+done
 cat > "$WORK/toolchain.cmake" <<EOF
 set(CMAKE_SYSTEM_NAME Windows)
 set(CMAKE_SYSTEM_PROCESSOR AMD64)
