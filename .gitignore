@@ -1,0 +1,7 @@
+# The repository intentionally contains source and notices, not downloaded binaries.
+*.exe
+*.dll
+*.msi
+*.gz
+*.zip
+node_modules/
