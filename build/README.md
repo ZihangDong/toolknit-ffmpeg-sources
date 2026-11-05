@@ -17,6 +17,13 @@ in `.github/workflows/build-runtime.yml`, then run:
 bash build/build-win64.sh
 ```
 
+The same script also supports an isolated MSYS2 UCRT64 environment on Windows
+with GCC, CMake, Meson, Ninja, pkgconf, NASM/Yasm, Autoconf, Automake, Libtool,
+GNU Make, diffutils, tar and Python installed. Start it with `/ucrt64/bin` before
+`/usr/bin` in PATH. Package inventory and toolchain notices are captured for the
+platform actually used. It does not change the system's default compiler or
+install any runtime into ToolKnit's managed directory.
+
 The output is a single statically linked Windows x86-64 FFmpeg executable plus
 FFprobe for validation, a deterministic gzip container, hashes, PE imports and
 configuration logs. Installed compiler package versions are recorded with each
