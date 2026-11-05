@@ -11,7 +11,7 @@ exe = (output / 'ffmpeg.exe').read_bytes()
 compressed = gzip.compress(exe, compresslevel=9, mtime=0)
 (output / 'ffmpeg-win32-x64.gz').write_bytes(compressed)
 record = {
-    'buildProfile': 'toolknit-win64-6.1.1-r2',
+    'buildProfile': 'toolknit-win64-6.1.6-r3',
     'bytes': len(compressed), 'sha256': hashlib.sha256(compressed).hexdigest(),
     'exeBytes': len(exe), 'exeSha256': hashlib.sha256(exe).hexdigest(),
 }

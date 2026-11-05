@@ -19,12 +19,16 @@ if $NATIVE_MSYS; then
   export CC=gcc CXX=g++ AR=ar RANLIB=ranlib STRIP=strip
   CROSS=''
   PREFIX_NATIVE="$(cygpath -m "$PREFIX")"
+  mkdir -p "$WORK/tmp"
+  export TMPDIR="$(cygpath -m "$WORK/tmp")"
+  export TEMP="$TMPDIR" TMP="$TMPDIR"
+  export WANT_AUTOCONF=2.72 WANT_AUTOMAKE=1.16
 fi
 export PKG_CONFIG_LIBDIR="$PREFIX/lib/pkgconfig:$PREFIX/share/pkgconfig"
 export PKG_CONFIG_PATH="$PKG_CONFIG_LIBDIR"
-export CFLAGS="-O2 -std=gnu11 -I$PREFIX/include -D_WIN32_WINNT=0x0601"
-export CXXFLAGS="-O2 -I$PREFIX/include -D_WIN32_WINNT=0x0601"
-export LDFLAGS="-L$PREFIX/lib -static-libgcc -static-libstdc++ -static"
+export CFLAGS="-O2 -std=gnu11 -I$PREFIX_NATIVE/include -D_WIN32_WINNT=0x0601"
+export CXXFLAGS="-O2 -I$PREFIX_NATIVE/include -D_WIN32_WINNT=0x0601"
+export LDFLAGS="-L$PREFIX_NATIVE/lib -static-libgcc -static-libstdc++ -static"
 export SOURCE_DATE_EPOCH=1704016800
 export GIT_CEILING_DIRECTORIES="$WORK/src"
 if $NATIVE_MSYS; then
@@ -72,7 +76,7 @@ auto() {
   make install
 }
 src zlib
-cmake -G Ninja -S . -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+cmake --fresh -G Ninja -S . -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build obj -j"$JOBS"
 cmake --install obj
 # zlib installs both variants; never let FFmpeg select the import library.
@@ -91,7 +95,7 @@ src x264
 make -j"$JOBS"
 make install
 src x265
-cmake -G Ninja -S source -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DENABLE_SHARED=OFF -DENABLE_CLI=OFF -DENABLE_LIBNUMA=OFF -DENABLE_ASSEMBLY=ON
+cmake --fresh -G Ninja -S source -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DENABLE_SHARED=OFF -DENABLE_CLI=OFF -DENABLE_LIBNUMA=OFF -DENABLE_ASSEMBLY=ON
 cmake --build obj -j"$JOBS"
 cmake --install obj
 src vpx
@@ -99,7 +103,7 @@ src vpx
 make -j"$JOBS" CROSS="$CROSS"
 make install
 src webp
-cmake -G Ninja -S . -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_SHARED_LIBS=OFF -DWEBP_BUILD_ANIM_UTILS=OFF -DWEBP_BUILD_CWEBP=OFF -DWEBP_BUILD_DWEBP=OFF -DWEBP_BUILD_GIF2WEBP=OFF -DWEBP_BUILD_IMG2WEBP=OFF -DWEBP_BUILD_VWEBP=OFF -DWEBP_BUILD_WEBPINFO=OFF -DWEBP_BUILD_EXTRAS=OFF
+cmake --fresh -G Ninja -S . -B obj -DCMAKE_TOOLCHAIN_FILE="$WORK/toolchain.cmake" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBUILD_SHARED_LIBS=OFF -DWEBP_BUILD_ANIM_UTILS=OFF -DWEBP_BUILD_CWEBP=OFF -DWEBP_BUILD_DWEBP=OFF -DWEBP_BUILD_GIF2WEBP=OFF -DWEBP_BUILD_IMG2WEBP=OFF -DWEBP_BUILD_VWEBP=OFF -DWEBP_BUILD_WEBPINFO=OFF -DWEBP_BUILD_EXTRAS=OFF
 cmake --build obj -j"$JOBS"
 cmake --install obj
 src dav1d
@@ -124,9 +128,9 @@ src nv-codec-headers
 make PREFIX="$PREFIX" install
 cd "$WORK/src"
 mkdir -p ffmpeg
-cp -a "$ROOT/ffmpeg/." ffmpeg/
+cp -a "$ROOT/source/ffmpeg-6.1.6/." ffmpeg/
 cd ffmpeg
-./configure --prefix="$PREFIX" --arch=x86_64 --target-os=mingw32 --cross-prefix="$CROSS" --cc="$CC" --cxx="$CXX" --pkg-config=pkg-config --pkg-config-flags=--static --enable-gpl --enable-version3 --enable-static --disable-shared --disable-autodetect --disable-debug --disable-doc --disable-ffplay --enable-zlib --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libvorbis --enable-libopus --enable-libvpx --enable-libwebp --enable-libdav1d --enable-ffnvcodec --enable-nvenc --enable-nvdec --enable-cuvid --enable-dxva2 --enable-d3d11va --extra-version=toolknit-r2 --extra-cflags="$CFLAGS" --extra-cxxflags="$CXXFLAGS" --extra-ldflags="$LDFLAGS" --extra-libs='-lstdc++ -lpthread -lm'
+./configure --prefix="$PREFIX" --arch=x86_64 --target-os=mingw32 --cross-prefix="$CROSS" --cc="$CC" --cxx="$CXX" --pkg-config=pkg-config --pkg-config-flags=--static --enable-gpl --enable-version3 --enable-static --disable-shared --disable-autodetect --disable-debug --disable-doc --disable-ffplay --enable-zlib --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libvorbis --enable-libopus --enable-libvpx --enable-libwebp --enable-libdav1d --enable-ffnvcodec --enable-nvenc --enable-nvdec --enable-cuvid --enable-dxva2 --enable-d3d11va --extra-version=toolknit-r3 --extra-cflags="$CFLAGS" --extra-cxxflags="$CXXFLAGS" --extra-ldflags="$LDFLAGS" --extra-libs='-lstdc++ -lpthread -lm'
 make -j"$JOBS"
 cp ffmpeg.exe "$WORK/output/ffmpeg.exe"
 cp ffprobe.exe "$WORK/output/ffprobe.exe"

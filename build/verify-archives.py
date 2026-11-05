@@ -13,7 +13,7 @@ for source in manifest['sources']:
 print(f"Verified all {len(manifest['sources'])} archived dependency sources.")
 files = json.loads((root / 'metadata/main-source-files.json').read_text())
 for entry in files:
-    data = (root / 'ffmpeg' / entry['path']).read_bytes()
+    data = (root / manifest.get('mainSource', {}).get('directory', 'ffmpeg') / entry['path']).read_bytes()
     # Upstream explicitly declares this text fixture as eol=crlf in Git.
     if entry['path'] == 'tests/ref/fate/sub-scc':
         data = data.replace(b'\r\n', b'\n')

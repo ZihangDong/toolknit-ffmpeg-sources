@@ -1,10 +1,10 @@
-# Candidate build: toolknit-win64-6.1.1-r2
+# Candidate build: toolknit-win64-6.1.6-r3
 
 This recipe is being validated. It does **not** describe how Gyan's old executable
 was built. The old runtime identity remains in `metadata/runtime.json` until a
 new binary has passed Windows compatibility checks and been published.
 
-The candidate builds the preserved FFmpeg 6.1.1 tree and the eleven exact source
+The candidate builds the preserved FFmpeg 6.1.6 tree in `source/ffmpeg-6.1.6/` and the eleven exact source
 archives in `metadata/build-sources.json`. Every dependency archive is stored in
 `third-party/` and checked by SHA-256 before compilation. No source is fetched at
 build time. Configure-generated changes are made only in `.build/src`; all build

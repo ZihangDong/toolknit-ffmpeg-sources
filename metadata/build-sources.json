@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "profile": "toolknit-win64-6.1.1-r2",
+  "profile": "toolknit-win64-6.1.6-r3",
   "sources": [
     {
       "name": "x264",
@@ -8,7 +8,8 @@
       "license": "GPL-2.0-or-later",
       "file": "third-party/x264.tar.gz",
       "sha256": "d0967a1348c85dfde363bb52610403be898171493100561efa0dd05d5fd1ae50",
-      "bytes": 1040667
+      "bytes": 1040667,
+      "upstreamCommit": "0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee"
     },
     {
       "name": "x265",
@@ -16,7 +17,8 @@
       "license": "GPL-2.0-or-later",
       "file": "third-party/x265.tar.gz",
       "sha256": "136915263c00134dd98d9d250cdda9892779b2ea3166dae12a574ab86ad0ec85",
-      "bytes": 1537127
+      "bytes": 1537127,
+      "upstreamCommit": "f0c1022b6be121a753ff02853fbe33da71988656"
     },
     {
       "name": "lame",
@@ -24,7 +26,8 @@
       "license": "LGPL-2.0-or-later",
       "file": "third-party/lame.tar.gz",
       "sha256": "9209a83cc0ca1621245e7a372a1202aff77e5807041e15ce7677647d9e3e8192",
-      "bytes": 1550373
+      "bytes": 1550373,
+      "upstreamCommit": "d9ae340aa2a8185fa541c24d7883c2a2f6246765"
     },
     {
       "name": "ogg",
@@ -32,7 +35,8 @@
       "license": "BSD-3-Clause",
       "file": "third-party/ogg.tar.gz",
       "sha256": "f6f1b04cfa4e98b70ffe775d5e302d9c6b98541f05159af6de2d6617817ed7d6",
-      "bytes": 251765
+      "bytes": 251765,
+      "upstreamCommit": "e1774cd77f471443541596e09078e78fdc342e4f"
     },
     {
       "name": "vorbis",
@@ -40,7 +44,8 @@
       "license": "BSD-3-Clause",
       "file": "third-party/vorbis.tar.gz",
       "sha256": "270c76933d0934e42c5ee0a54a36280e2d87af1de3cc3e584806357e237afd13",
-      "bytes": 1234573
+      "bytes": 1234573,
+      "upstreamCommit": "0657aee69dec8508a0011f47f3b69d7538e9d262"
     },
     {
       "name": "opus",
@@ -48,7 +53,8 @@
       "license": "BSD-3-Clause",
       "file": "third-party/opus.tar.gz",
       "sha256": "659e6b223e42a51b0a898632b9a5f406ccd5c2e00aa526ddd1264789774b94e5",
-      "bytes": 851780
+      "bytes": 851780,
+      "upstreamCommit": "82ac57d9f1aaf575800cf17373348e45b7ce6c0d"
     },
     {
       "name": "vpx",
@@ -56,7 +62,8 @@
       "license": "BSD-3-Clause",
       "file": "third-party/vpx.tar.gz",
       "sha256": "00dae80465567272abd077f59355f95ac91d7809a2d3006f9ace2637dd429d14",
-      "bytes": 5515662
+      "bytes": 5515662,
+      "upstreamCommit": "10b9492dcf05b652e2e4b370e205bd605d421972"
     },
     {
       "name": "webp",
@@ -64,7 +71,8 @@
       "license": "BSD-3-Clause",
       "file": "third-party/webp.tar.gz",
       "sha256": "c2c2f521fa468e3c5949ab698c2da410f5dce1c5e99f5ad9e70e0e8446b86505",
-      "bytes": 3685345
+      "bytes": 3685345,
+      "upstreamCommit": "ca332209cb5567c9b249c86788cb2dbf8847e760"
     },
     {
       "name": "zlib",
@@ -72,7 +80,8 @@
       "license": "Zlib",
       "file": "third-party/zlib.tar.gz",
       "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c",
-      "bytes": 1572744
+      "bytes": 1572744,
+      "upstreamCommit": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
     },
     {
       "name": "nv-codec-headers",
@@ -80,15 +89,24 @@
       "license": "MIT",
       "file": "third-party/nv-codec-headers.tar.gz",
       "sha256": "2fefaa227d2a3b4170797796425a59d1dd2ed5fd231db9b4244468ba327acd0b",
-      "bytes": 79598
+      "bytes": 79598,
+      "upstreamCommit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1"
     },
     {
       "name": "dav1d",
-      "url": "https://codeload.github.com/videolan/dav1d/tar.gz/refs/tags/1.3.0",
+      "url": "https://codeload.github.com/videolan/dav1d/tar.gz/54706fc6bc0cdecab7e9593974a4039cc038fca7",
       "license": "BSD-2-Clause",
       "file": "third-party/dav1d.tar.gz",
-      "sha256": "1b3e75433dd69eb88ff3190ed1b1707ca5b9f43260b6348c551455c885eaab3a",
-      "bytes": 1494299
+      "sha256": "9edb11a2108b375cc58370354e705feebc93430bb780130363815c1e1ac0c250",
+      "bytes": 1751896,
+      "upstreamCommit": "54706fc6bc0cdecab7e9593974a4039cc038fca7"
     }
-  ]
+  ],
+  "mainSource": {
+    "upstream": "https://github.com/FFmpeg/FFmpeg",
+    "tag": "n6.1.6",
+    "commit": "f1e3a2bf7a2f2cde936d1ed97f09a26853d20125",
+    "tree": "9aaca04fcc4bb2a56d3a06bab6d262d587956dc2",
+    "directory": "source/ffmpeg-6.1.6"
+  }
 }
