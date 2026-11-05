@@ -1,0 +1,28 @@
+name: Build traceable Windows runtime
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Install general-purpose cross compiler
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc-mingw-w64-x86-64-posix g++-mingw-w64-x86-64-posix binutils-mingw-w64-x86-64 autoconf automake libtool pkg-config nasm yasm cmake ninja-build meson python3
+      - name: Compile only from archived project sources
+        env:
+          TOOLKNIT_BUILD_JOBS: '4'
+        run: bash build/build-win64.sh > build.log 2>&1
+      - name: Upload build evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: toolknit-ffmpeg-win64-r2
+          path: |
+            .build/output/*
+            build.log
+          retention-days: 14

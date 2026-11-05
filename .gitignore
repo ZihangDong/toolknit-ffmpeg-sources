@@ -5,3 +5,6 @@
 *.gz
 *.zip
 node_modules/
+.build/
+build.log
+!third-party/*.tar.gz
